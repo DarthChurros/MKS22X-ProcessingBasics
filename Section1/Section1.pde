@@ -40,7 +40,7 @@ class Visualizer {
     for (int i = 0; i < values.length; i++) {
       if (values[i] < 0) fill(255, 0, 0);
       else fill(0, 255, 0);
-      rect(x+400/values.length*i, y+100-values[i], 400/values.length, values[i]);
+      rect(x+400/(float)values.length*i, y+100-values[i], 400/(float)values.length, values[i]);
     }
 
     //Width of the visualizer is 400!
